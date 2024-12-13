@@ -1,0 +1,28 @@
+@keyframes watermark {
+    0% {
+        opacity: 0;
+        x: -50;
+    }
+    25% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.8;
+    }
+    75% {
+        opacity: 0;
+        x: -250;
+    }
+    100% {
+        opacity: 0;
+        x: -50;
+    }
+}
+
+.watermark-bg {
+    animation: watermark 3s infinite forwards;
+    animation-delay: calc(var(--d) / 2);
+    transform-origin: 50% 50%;
+    opacity: 0;
+    filter: contrast(1.2);
+}

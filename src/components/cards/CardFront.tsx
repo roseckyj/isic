@@ -3,6 +3,7 @@ import moment from "moment";
 import { CARD_ASPECT_RATIO } from "../../App";
 import { useAppState } from "../../AppState";
 import { formatCardNumber } from "../utils/formatCardNumber";
+import { Watermarks } from "../utils/watermark/Watermark";
 
 export function CardFront() {
     const width = 100;
@@ -92,6 +93,7 @@ export function CardFront() {
                     // Fill the space while preserving aspect ratio
                     preserveAspectRatio="xMidYMid slice"
                 />
+                <Watermarks width={width} height={height} />
             </g>
         </chakra.svg>
     );

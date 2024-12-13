@@ -1,6 +1,7 @@
 import { chakra } from "@chakra-ui/react";
 import { CARD_ASPECT_RATIO } from "../../App";
 import { useAppState } from "../../AppState";
+import { Watermarks } from "../utils/watermark/Watermark";
 
 export function CardBack() {
     const width = 100;
@@ -41,6 +42,7 @@ export function CardBack() {
                     preserveAspectRatio="xMinYMid"
                 />
             </g>
+            <Watermarks width={width} height={height} />
         </chakra.svg>
     );
 }

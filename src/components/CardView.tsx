@@ -15,12 +15,12 @@ import {
 import moment from "moment";
 import { useEffect, useRef, useState } from "react";
 import { BiArrowBack } from "react-icons/bi";
-import QRCode from "react-qr-code";
 import { CARD_ASPECT_RATIO, IStepProps } from "../App";
 import { useAppState } from "../AppState";
 import qr from "../icons/dark/ic_qr_scanner.svg";
 import { CardBack } from "./cards/CardBack";
 import { CardFront } from "./cards/CardFront";
+import { FakeQR } from "./utils/FakeQR";
 import { Refresh } from "./utils/Refresh";
 import { formatCardNumber } from "./utils/formatCardNumber";
 
@@ -160,14 +160,7 @@ export function CardView({ setStep }: IStepProps) {
                                     w="full"
                                     p={10}
                                 >
-                                    <QRCode
-                                        value={appState.number}
-                                        style={{
-                                            width: "100%",
-                                            height: "100%",
-                                        }}
-                                        level="L"
-                                    />
+                                    <FakeQR />
                                 </Box>
                                 <Button
                                     alignSelf="center"
