@@ -54,7 +54,14 @@ export function useAppState() {
 
     return {
         ...context,
-        save: () => {
+        save: (value: IAppState) => {
+            context.name = value.name;
+            context.number = value.number;
+            context.birthdate = value.birthdate;
+            context.photo = value.photo;
+            context.logo = value.logo;
+            context.validFrom = value.validFrom;
+
             // Save the state
             localStorage.setItem(LS_KEY, JSON.stringify(context));
         },

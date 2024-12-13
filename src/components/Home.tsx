@@ -48,6 +48,7 @@ export function Home({ setStep }: IStepProps) {
                         mr={4}
                         size="lg"
                         icon={<img src={settingsIcon} alt="Settings" />}
+                        onClick={() => setStep("edit")}
                     />
                 </Flex>
             </Flex>
