@@ -1,0 +1,6 @@
+<svg id="vector" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+    <g id="arrow">
+        <path fill="#737373" d="M7,14 L12,9 L17,14 L7,14 Z"/>
+        <path fill="none" d="M0,0 L24,0 L24,24 L0,24 L0,0 Z"/>
+    </g>
+</svg>

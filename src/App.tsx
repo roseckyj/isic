@@ -1,26 +1,25 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import { CardView } from "./components/CardView";
+import { Home } from "./components/Home";
+
+export interface IStepProps {
+    setStep: (step: "home" | "card") => void;
+}
+
+const width = 53.98;
+const height = 85.6;
+export const CARD_ASPECT_RATIO = width / height;
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const [step, setStep] = useState<"home" | "card">("home");
+    const props: IStepProps = { setStep };
+
+    switch (step) {
+        case "home":
+            return <Home {...props} />;
+        case "card":
+            return <CardView {...props} />;
+    }
 }
 
 export default App;
