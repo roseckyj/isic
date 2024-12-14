@@ -19,8 +19,8 @@
     "display": "standalone",
     "dir": "auto",
     "lang": "cs-CZ",
-    "name": "Alive App",
-    "short_name": "Alive App",
+    "name": "Alive App.",
+    "short_name": "Alive App.",
     "start_url": "https://roseckyj.github.io/isic",
     "scope": "https://roseckyj.github.io/isic"
 }
