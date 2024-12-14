@@ -42,13 +42,13 @@ export function useAppState() {
 
     // Increase valid from so it is not older than 6 years
     const validFrom = moment(context.validFrom);
-    while (moment().diff(validFrom, "years") >= 6) {
+    while (Math.abs(moment().diff(validFrom, "years")) >= 5) {
         validFrom.add(1, "year");
     }
 
     // Increment the birthdate if the age is 25 or more so the user is still 24
     let birthdate = moment(context.birthdate);
-    while (moment().diff(birthdate, "years") >= 25) {
+    while (Math.abs(moment().diff(birthdate, "years")) >= 25) {
         birthdate = birthdate.add(1, "year");
     }
 

@@ -62,7 +62,7 @@ export function CardFront() {
                     fontSize={3.1}
                     fontWeight={600}
                 >
-                    {moment(appState.birthdate).format("DD. MM. YYYY")}
+                    {moment(appState.tweakedBirthdate).format("DD. MM. YYYY")}
                 </chakra.text>
                 <chakra.text
                     x={5.5}
