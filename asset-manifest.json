@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/isic/static/css/main.f2233f8d.css",
-    "main.js": "/isic/static/js/main.4091c37f.js",
+    "main.js": "/isic/static/js/main.f0bc891f.js",
     "static/media/ic_competition.svg": "/isic/static/media/ic_competition.f8678d855c563f8a532d4558d86b8c95.svg",
     "static/media/ic_discount.svg": "/isic/static/media/ic_discount.2f210805f35d0a532501a21163eef2c1.svg",
     "static/media/ic_card.svg": "/isic/static/media/ic_card.c2c5d86c3db33c4105dd0334776459f6.svg",
@@ -14,10 +14,10 @@
     "index.html": "/isic/index.html",
     "static/media/ic_clipboard.svg": "/isic/static/media/ic_clipboard.f775d1085f1b98d6fcd6f3f6775432b8.svg",
     "main.f2233f8d.css.map": "/isic/static/css/main.f2233f8d.css.map",
-    "main.4091c37f.js.map": "/isic/static/js/main.4091c37f.js.map"
+    "main.f0bc891f.js.map": "/isic/static/js/main.f0bc891f.js.map"
   },
   "entrypoints": [
     "static/css/main.f2233f8d.css",
-    "static/js/main.4091c37f.js"
+    "static/js/main.f0bc891f.js"
   ]
 }
