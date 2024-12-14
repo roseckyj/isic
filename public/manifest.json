@@ -1,0 +1,26 @@
+{
+    "theme_color": "#65c0be",
+    "background_color": "#ebf9f9",
+    "icons": [
+        {
+            "purpose": "maskable",
+            "sizes": "512x512",
+            "src": "icon512_maskable.png",
+            "type": "image/png"
+        },
+        {
+            "purpose": "any",
+            "sizes": "512x512",
+            "src": "icon512_rounded.png",
+            "type": "image/png"
+        }
+    ],
+    "orientation": "portrait",
+    "display": "standalone",
+    "dir": "auto",
+    "lang": "cs-CZ",
+    "name": "Alive App",
+    "short_name": "Alive App",
+    "start_url": "https://roseckyj.github.io/isic",
+    "scope": "https://roseckyj.github.io/isic"
+}
