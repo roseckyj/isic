@@ -41,8 +41,8 @@ export function CardBack() {
                     // Align X left Y middle
                     preserveAspectRatio="xMinYMid"
                 />
+                <Watermarks width={width} height={height} />
             </g>
-            <Watermarks width={width} height={height} />
         </chakra.svg>
     );
 }
