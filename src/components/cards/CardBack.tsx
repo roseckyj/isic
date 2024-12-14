@@ -1,6 +1,7 @@
 import { chakra } from "@chakra-ui/react";
 import { CARD_ASPECT_RATIO } from "../../App";
 import { useAppState } from "../../AppState";
+import { back } from "../utils/offlineFile";
 import { Watermarks } from "../utils/watermark/Watermark";
 
 export function CardBack() {
@@ -25,7 +26,7 @@ export function CardBack() {
                 })`}
             >
                 <chakra.image
-                    href="/isic/images/back.jpg"
+                    href={back}
                     x="0"
                     y="0"
                     width={width}

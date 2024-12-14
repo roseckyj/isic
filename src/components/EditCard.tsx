@@ -13,7 +13,7 @@ import moment from "moment";
 import { useState } from "react";
 import { IStepProps } from "../App";
 import { useAppState } from "../AppState";
-import closeIcon from "../icons/dark/ic_icon_close.svg";
+import { dark_ic_icon_close } from "./utils/offlineFile";
 
 export function EditCard({ setStep }: IStepProps) {
     const appState = useAppState();
@@ -45,7 +45,7 @@ export function EditCard({ setStep }: IStepProps) {
                         mr="auto"
                         ml={4}
                         size="lg"
-                        icon={<img src={closeIcon} alt="Zavřít" />}
+                        icon={<img src={dark_ic_icon_close} alt="Zavřít" />}
                         onClick={() => setStep("home")}
                     />
                 </Flex>

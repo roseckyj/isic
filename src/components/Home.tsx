@@ -14,15 +14,18 @@ import { MenuButton } from "./utils/MenuButton";
 import moment from "moment";
 import { IStepProps } from "../App";
 import { useAppState } from "../AppState";
-import settingsIcon from "../icons/dark/ic_add.svg";
-import copy from "../icons/light/ic_clipboard.svg";
-import competitionIcon from "../icons/light/ic_competition.svg";
-import salesIcon from "../icons/light/ic_discount.svg";
-import homeIcon from "../icons/light/ic_home.svg";
-import profileIcon from "../icons/light/ic_profile.svg";
-import cardsIcon from "../icons/selected/ic_card.svg";
-import logo from "../icons/selected/ic_isic_logo.svg";
+
 import { formatCardNumber } from "./utils/formatCardNumber";
+import {
+    dark_ic_add,
+    light_ic_clipboard,
+    light_ic_competition,
+    light_ic_discount,
+    light_ic_home,
+    light_ic_profile,
+    selected_ic_card,
+    selected_ic_isic_logo,
+} from "./utils/offlineFile";
 
 export function Home({ setStep }: IStepProps) {
     const appState = useAppState();
@@ -47,7 +50,7 @@ export function Home({ setStep }: IStepProps) {
                         ml="auto"
                         mr={4}
                         size="lg"
-                        icon={<img src={settingsIcon} alt="Settings" />}
+                        icon={<img src={dark_ic_add} alt="Settings" />}
                         onClick={() => setStep("edit")}
                     />
                 </Flex>
@@ -83,13 +86,18 @@ export function Home({ setStep }: IStepProps) {
                     mt={6}
                 >
                     <HStack w="full">
-                        <Image src={logo} alt="ISIC" w={10} h={10} />
+                        <Image
+                            src={selected_ic_isic_logo}
+                            alt="ISIC"
+                            w={10}
+                            h={10}
+                        />
                         <VStack alignItems="flex-start" ml={2} spacing={0}>
                             <HStack>
                                 <Text fontWeight="bold">
                                     {formatCardNumber(appState.number)}
                                 </Text>
-                                <Image src={copy} alt="copy" />
+                                <Image src={light_ic_clipboard} alt="copy" />
                             </HStack>
                             <Text>
                                 Platí do{" "}
@@ -122,11 +130,11 @@ export function Home({ setStep }: IStepProps) {
                 bg="#fefefe"
                 shadow="0px 10px 10px 10px rgba(0,0,0,0.1)"
             >
-                <MenuButton label="Nástěnka" icon={homeIcon} />
-                <MenuButton label="Slevy" icon={salesIcon} />
-                <MenuButton label="Průkazy" icon={cardsIcon} selected />
-                <MenuButton label="Soutěže" icon={competitionIcon} />
-                <MenuButton label="Profil" icon={profileIcon} />
+                <MenuButton label="Nástěnka" icon={light_ic_home} />
+                <MenuButton label="Slevy" icon={light_ic_discount} />
+                <MenuButton label="Průkazy" icon={selected_ic_card} selected />
+                <MenuButton label="Soutěže" icon={light_ic_competition} />
+                <MenuButton label="Profil" icon={light_ic_profile} />
             </Flex>
         </VStack>
     );

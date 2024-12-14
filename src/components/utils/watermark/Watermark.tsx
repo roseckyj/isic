@@ -1,4 +1,35 @@
-import "./watermark.css";
+import { bg } from "../offlineFile";
+
+const css = `
+@keyframes watermark {
+    0% {
+        opacity: 0;
+        x: -50;
+    }
+    25% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.8;
+    }
+    75% {
+        opacity: 0;
+        x: -250;
+    }
+    100% {
+        opacity: 0;
+        x: -50;
+    }
+}
+
+.watermark-bg {
+    animation: watermark 3s infinite forwards;
+    animation-delay: calc(var(--d) / 2);
+    transform-origin: 50% 50%;
+    opacity: 0;
+    filter: contrast(1.2);
+}
+`;
 
 export interface IWatermarksProps {
     width: number;
@@ -53,7 +84,7 @@ function Watermark({ x, y }: IWatermarkProps) {
                     y="-200"
                     width="300"
                     height="300"
-                    xlinkHref="/isic/images/bg.png"
+                    xlinkHref={bg}
                     className="watermark-bg"
                     style={{ animationDelay: `${delay}s` }}
                 />
@@ -63,6 +94,11 @@ function Watermark({ x, y }: IWatermarkProps) {
 }
 
 function WatermarkClippath() {
+    // Add the css to the document
+    const style = document.createElement("style");
+    style.innerHTML = css;
+    document.head.appendChild(style);
+
     return (
         <defs>
             <clipPath id="watermark">

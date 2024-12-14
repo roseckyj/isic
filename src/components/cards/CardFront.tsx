@@ -3,6 +3,7 @@ import moment from "moment";
 import { CARD_ASPECT_RATIO } from "../../App";
 import { useAppState } from "../../AppState";
 import { formatCardNumber } from "../utils/formatCardNumber";
+import { front } from "../utils/offlineFile";
 import { Watermarks } from "../utils/watermark/Watermark";
 
 export function CardFront() {
@@ -27,7 +28,7 @@ export function CardFront() {
                 })`}
             >
                 <chakra.image
-                    href="/isic/images/front.png"
+                    href={front}
                     x="0"
                     y="0"
                     width={width}

@@ -1,7 +1,8 @@
 import { Image } from "@chakra-ui/react";
+import { qr } from "./offlineFile";
 
 export function FakeQR() {
     // Render an unscanable QR code
 
-    return <Image src="/isic/images/qr.svg" width="100%" height="100%" />;
+    return <Image src={qr} width="100%" height="100%" />;
 }

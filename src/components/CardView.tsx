@@ -17,12 +17,12 @@ import { useEffect, useRef, useState } from "react";
 import { BiArrowBack } from "react-icons/bi";
 import { CARD_ASPECT_RATIO, IStepProps } from "../App";
 import { useAppState } from "../AppState";
-import qr from "../icons/dark/ic_qr_scanner.svg";
 import { CardBack } from "./cards/CardBack";
 import { CardFront } from "./cards/CardFront";
 import { FakeQR } from "./utils/FakeQR";
 import { Refresh } from "./utils/Refresh";
 import { formatCardNumber } from "./utils/formatCardNumber";
+import { dark_ic_qr_scanner } from "./utils/offlineFile";
 
 export function CardView({ setStep }: IStepProps) {
     // const [orientation, setOrientation] = useState<"portrait" | "landscape">(
@@ -147,7 +147,14 @@ export function CardView({ setStep }: IStepProps) {
                     rounded="full"
                     _hover={{ bg: "white" }}
                     _active={{ bg: "white" }}
-                    leftIcon={<Image src={qr} alt="ISIC" w={6} h={6} />}
+                    leftIcon={
+                        <Image
+                            src={dark_ic_qr_scanner}
+                            alt="ISIC"
+                            w={6}
+                            h={6}
+                        />
+                    }
                     border="solid 1px #e8e8e8"
                     onClick={onOpen}
                 >
