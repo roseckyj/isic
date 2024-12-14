@@ -19,12 +19,20 @@ root.render(
                             body: {
                                 overflow: "hidden",
                             },
-                            // Hide scrollbars on all elements
                             "*": {
+                                // Hide scrollbars on all elements
                                 scrollbarWidth: "none",
                                 "&::-webkit-scrollbar": {
                                     display: "none",
                                 },
+                                // Disable text selection everywhere
+                                userSelect: "none",
+                                // Disable focus outline and fill on buttons
+                                _focus: {
+                                    boxShadow: "none",
+                                },
+                                // -webkit-tap-highlight-color: transparent;
+                                "-webkit-tap-highlight-color": "transparent",
                             },
                         },
                     },
