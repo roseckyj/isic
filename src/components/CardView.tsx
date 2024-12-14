@@ -55,7 +55,13 @@ export function CardView({ setStep }: IStepProps) {
     }, []);
 
     return (
-        <VStack alignItems="stretch" fontSize="sm" h="100vh" maxH="100vh">
+        <VStack
+            alignItems="stretch"
+            fontSize="sm"
+            h="100vh"
+            maxH="100vh"
+            bg="#ebf9f9"
+        >
             <HStack
                 bg="blackAlpha.800"
                 borderRadius="md"
@@ -131,6 +137,7 @@ export function CardView({ setStep }: IStepProps) {
                 <Button
                     alignSelf="stretch"
                     mt={6}
+                    mb={4}
                     shadow="md"
                     p={7}
                     fontSize="sm"
