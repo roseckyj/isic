@@ -27,7 +27,7 @@ export function CardFront() {
                 })`}
             >
                 <chakra.image
-                    href="/images/front.png"
+                    href="/isic/images/front.png"
                     x="0"
                     y="0"
                     width={width}

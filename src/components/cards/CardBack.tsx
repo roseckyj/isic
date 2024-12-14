@@ -25,7 +25,7 @@ export function CardBack() {
                 })`}
             >
                 <chakra.image
-                    href="/images/back.jpg"
+                    href="/isic/images/back.jpg"
                     x="0"
                     y="0"
                     width={width}

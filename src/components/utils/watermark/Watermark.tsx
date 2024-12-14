@@ -53,7 +53,7 @@ function Watermark({ x, y }: IWatermarkProps) {
                     y="-200"
                     width="300"
                     height="300"
-                    xlinkHref="/images/bg.png"
+                    xlinkHref="/isic/images/bg.png"
                     className="watermark-bg"
                     style={{ animationDelay: `${delay}s` }}
                 />
