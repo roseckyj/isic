@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.f2233f8d.css",
+    "main.js": "/static/js/main.b1928404.js",
+    "static/media/ic_competition.svg": "/static/media/ic_competition.f8678d855c563f8a532d4558d86b8c95.svg",
+    "static/media/ic_discount.svg": "/static/media/ic_discount.2f210805f35d0a532501a21163eef2c1.svg",
+    "static/media/ic_card.svg": "/static/media/ic_card.c2c5d86c3db33c4105dd0334776459f6.svg",
+    "static/media/ic_qr_scanner.svg": "/static/media/ic_qr_scanner.253097f85d04ab883b9be0f2844cbcbd.svg",
+    "static/media/ic_isic_logo.svg": "/static/media/ic_isic_logo.38ad2b99c9ba933fa1a6c24944df76fe.svg",
+    "static/media/ic_add.svg": "/static/media/ic_add.a6bfa7332891f709b76caf886efa1e10.svg",
+    "static/media/ic_profile.svg": "/static/media/ic_profile.72f4ea339955bdf645b3ab98be29e9be.svg",
+    "static/media/ic_icon_close.svg": "/static/media/ic_icon_close.f44b91fd99a34b65bc9facdfc2cd44c7.svg",
+    "static/media/ic_home.svg": "/static/media/ic_home.dc8298d2d98b290bf13b5abd492b4656.svg",
+    "index.html": "/index.html",
+    "static/media/ic_clipboard.svg": "/static/media/ic_clipboard.f775d1085f1b98d6fcd6f3f6775432b8.svg",
+    "main.f2233f8d.css.map": "/static/css/main.f2233f8d.css.map",
+    "main.b1928404.js.map": "/static/js/main.b1928404.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f2233f8d.css",
+    "static/js/main.b1928404.js"
+  ]
+}

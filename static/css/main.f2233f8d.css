@@ -1,0 +1,2 @@
+@keyframes watermark{0%{x:-50;opacity:0}25%{opacity:0}50%{opacity:.8}75%{x:-250;opacity:0}to{x:-50;opacity:0}}.watermark-bg{animation:watermark 3s infinite forwards;animation-delay:calc(var(--d)/2);filter:contrast(1.2);opacity:0;transform-origin:50% 50%}body{overflow:hidden}
+/*# sourceMappingURL=main.f2233f8d.css.map*/
